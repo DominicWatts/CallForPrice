@@ -1,0 +1,7 @@
+<?xml version="1.0" ?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:ObjectManager/etc/config.xsd">
+	<type name="Magento\Catalog\Model\Product">
+		<plugin disabled="false" name="Xigen_CallForPrice_Plugin_Magento_Catalog_Model_Product" sortOrder="10" type="Xigen\CallForPrice\Plugin\Magento\Catalog\Model\Product"/>
+	</type>
+	<preference for="Magento\Framework\Pricing\Render\Amount" type="Xigen\CallForPrice\Rewrite\Magento\Framework\Pricing\Render\Amount"/>
+</config>
