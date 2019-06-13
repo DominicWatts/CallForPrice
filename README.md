@@ -4,7 +4,7 @@ Product attribute swaps price for string specified in the backend
 
 # Install instructions #
 
-`composer require dominicwatts/quotecleaner`
+`composer require dominicwatts/callforprice`
 
 `php bin/magento setup:upgrade`
 
