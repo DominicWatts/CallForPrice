@@ -7,8 +7,8 @@ namespace Xigen\CallForPrice\Plugin\Magento\Catalog\Model;
  */
 class Product
 {
-    const CALL_FOR_PRICE_ENABLED = 'product/call_for_price/enabled';
-    const CALL_FOR_PRICE_TEXT = 'product/call_for_price/telephone';
+    const CALL_FOR_PRICE_ENABLED = 'call_for_price/call_for_price/enabled';
+    const CALL_FOR_PRICE_TEXT = 'call_for_price/call_for_price/telephone';
 
     private $_store;
     private $_storeManager;
