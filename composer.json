@@ -1,9 +1,9 @@
 {
     "name": "dominicwatts/callforprice",
-    "description": "",
+    "description": "Call For Price product attribute swaps price for string specified in the backend",
     "type": "magento2-module",
     "license": "proprietary",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "authors": [
         {
             "name": "Dominic Xigen",
