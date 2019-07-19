@@ -32,10 +32,9 @@ class Amount extends \Magento\Framework\Pricing\Render\Amount
 
         return $html;
     }
-
+    
     /**
      * Get store identifier.
-     *
      * @return int
      */
     public function getStoreId()
@@ -45,7 +44,6 @@ class Amount extends \Magento\Framework\Pricing\Render\Amount
 
     /**
      * Call for price enabled.
-     *
      * @return void
      */
     public function getCallForPriceEnabled()
@@ -61,7 +59,6 @@ class Amount extends \Magento\Framework\Pricing\Render\Amount
 
     /**
      * Cal for price text.
-     *
      * @return void
      */
     public function getCallForPriceText()
