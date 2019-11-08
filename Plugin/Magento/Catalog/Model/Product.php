@@ -10,10 +10,27 @@ class Product
     const CALL_FOR_PRICE_ENABLED = 'call_for_price/call_for_price/enabled';
     const CALL_FOR_PRICE_TEXT = 'call_for_price/call_for_price/telephone';
 
-    private $_store;
+    /**
+     * @var \Magento\Store\Model\StoreManagerInterface
+     */
     private $_storeManager;
+
+    /**
+     * @var \Magento\Framework\App\Config\ScopeConfigInterface
+     */
+    private $_scopeConfig;
+
+    /**
+     * @var \Psr\Log\LoggerInterface
+     */
     private $logger;
 
+    /**
+     * Product constructor.
+     * @param \Magento\Store\Model\StoreManagerInterface $storeManager
+     * @param \Magento\Framework\App\Config\ScopeConfigInterface $scopeConfig
+     * @param \Psr\Log\LoggerInterface $logger
+     */
     public function __construct(
         \Magento\Store\Model\StoreManagerInterface $storeManager,
         \Magento\Framework\App\Config\ScopeConfigInterface $scopeConfig,
@@ -26,10 +43,8 @@ class Product
 
     /**
      * plugin to change price.
-     *
      * @param \Magento\Catalog\Model\Product $product
-     * @param float                          $result
-     *
+     * @param float $result
      * @return mixed
      */
     public function afterGetPrice(
@@ -45,10 +60,8 @@ class Product
 
     /**
      * plugin to change is saleable.
-     *
      * @param \Magento\Catalog\Model\Product $product
-     * @param bool                           $result
-     *
+     * @param bool $result
      * @return mixed
      */
     public function afterGetIsSaleable(
@@ -64,10 +77,8 @@ class Product
 
     /**
      * plugin to change is saleable.
-     *
      * @param \Magento\Catalog\Model\Product $product
-     * @param bool                           $result
-     *
+     * @param bool $result
      * @return mixed
      */
     public function afterIsSaleable(
@@ -83,7 +94,6 @@ class Product
 
     /**
      * Get store identifier.
-     *
      * @return int
      */
     public function getStoreId()
@@ -93,7 +103,6 @@ class Product
 
     /**
      * Call for price enabled.
-     *
      * @return void
      */
     public function getCallForPriceEnabled()
@@ -109,7 +118,6 @@ class Product
 
     /**
      * Cal for price text.
-     *
      * @return void
      */
     public function getCallForPriceText()
