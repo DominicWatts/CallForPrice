@@ -13,7 +13,7 @@ use Magento\Framework\Setup\UpgradeDataInterface;
 class UpgradeData implements UpgradeDataInterface
 {
     /**
-     * @var EavSetupFactory 
+     * @var EavSetupFactory
      */
     private $eavSetupFactory;
 
