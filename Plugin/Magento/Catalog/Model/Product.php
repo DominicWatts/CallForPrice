@@ -16,6 +16,11 @@ class Product
     private $_storeManager;
 
     /**
+     * @var \Magento\Framework\App\Config\ScopeConfigInterface 
+     */
+    private $_scopeConfig;
+
+    /**
      * @var \Psr\Log\LoggerInterface
      */
     private $logger;
